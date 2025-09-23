@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <header class="main-header">
+  <div class="logo">⚡ Kalkulačka</div>
+  <nav class="nav-links">
+    <a href="index.html">Kalkulačka</a>
+    <a href="info.html">Informace</a>
+    <a href="infomatros.html">Informace o materiálech</a>
+  </nav>
+</header>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulačka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>Kalkulačka</h1>
+ 
+
+    
+
+    <label for="calcType">Co chcete vypočítat?</label>
+    <select id="calcType">
+      <option value="watty">CigaWatty (cW)</option>
+      <option value="hmotnost">Hmotnost (kg)</option>
+      <option value="cas">Čas (s)</option>
+      <option value="people">Počet lidí</option>
+      </select>
+    
+    
+    
+<label for="material">Vyber materiál na kradení:</label>
+    <select id="material">
+      <option value="copper">Měď </option>
+      <option value="gold">Zlato </option>
+      <option value="iron">Železo </option>
+      <option value="kolo">Kolo </option>
+      <option value="auto">Auto </option>
+    </select>
+
+    <div id="inputs">
+      <div id="input-hmotnost">
+        <label>Hmotnost materiálu (kg)</label>
+        <input type="number" id="hmotnost" value="" step="0.01">
+      </div>
+      <div id="input-cas">
+        <label>Rychlost kradení (s)</label>
+        <input type="number" id="cas" value="" step="0.01">
+      </div>
+      <div id="input-people">
+        <label>Počet cikánů</label>
+        <input type="number" id="people" value="" step="1">
+      </div>
+      <div id="input-watty">
+        <label>CigaWatty(cW)</label>
+        <input type="number" id="watty" value="" step="0.01">
+      </div>
+    </div>
+
+    <button id="calcBtn">Spočítat</button>
+    <button id="clearBtn">Vyčistit</button>
+
+    <h2>Výsledek:</h2>
+    <div id="result">—</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+<p>&copy; 2025 Kalkulačka CigaWatty, Autoři: Já a Ty</p>
+</html>
